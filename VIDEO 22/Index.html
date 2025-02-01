@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 12px;
+        }
+
+        .box {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /*width: 2048px;*/
+            width: 80vw;
+            height: 10vh;
+            background-color: blue;
+            margin: auto;
+        }
+
+        .container {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /*width: 2048px;*/
+            background-color: blue;
+            width: 80vw;
+            /*height: 80vh;*/
+            min-height: 80vh;
+            margin: 23px auto;
+            font-size: 18px;
+
+        }
+
+        .container div {
+            width: 50%;
+            border: 2px solid red;
+            font-size: 2rem;
+        }
+
+        .container>div {
+            border: 2px springgreen;
+            width: 50%;
+        }
+
+        .mycont {
+            box-sizing: border-box;
+            margin: 23px auto;
+            border: 2px solid black;
+            color: black;
+            font-size: 22px;
+            /*width: 100vmin;*/
+            width: 80vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        This is a box
+    </div>
+
+    <div class="container">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quos dolor veniam non nesciunt expedita
+            sint
+            porro, modi consequuntur, libero tenetur dolores suscipit odio exercitationem ipsum impedit recusandae
+            tempore! Fuga quo voluptatem ratione nesciunt harum accusamus modi, minus nulla temporibus ad officia
+            cupiditate impedit. Delectus nihil illo non maiores, iure architecto ut quas quibusdam nobis optio?
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo distinctio itaque culpa quisquam
+                fugit
+                totam aperiam, dolores ad voluptates cupiditate excepturi blanditiis error earum fugiat sequi vel
+                reiciendis
+                exercitationem alias!
+            </div>
+        </div>
+        /
+    </div>
+    <!--expand this to see that container will adjust its height lorem 999-->
+    </div>
+    <div class="mycont">
+        I am another container </div>
+</body>
+
+</html>
